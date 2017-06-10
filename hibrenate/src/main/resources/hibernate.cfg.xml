@@ -15,5 +15,6 @@
 		<mapping class="com.rajni.hibernate.basic.Employee" />
 		<mapping class="com.rajni.hibernate.basic.Address"/>
 		<mapping class="com.rajni.hibernate.basic.Course" />
+		<mapping class="com.rajni.hibernate.collection.Product"/>
 	</session-factory>
 </hibernate-configuration>
