@@ -29,6 +29,12 @@ public class HibernateUtil {
 		if (session == null) {
 			if (sessionFactory.isPresent()) {
 				session = sessionFactory.get().openSession();
+			} else {
+				sessionFactory = getSessionFactory();
+				if(sessionFactory.isPresent()){
+					session = sessionFactory.get().openSession();
+				}
+				
 			}
 		}
 		return session;

@@ -16,5 +16,8 @@
 		<mapping class="com.rajni.hibernate.basic.Address"/>
 		<mapping class="com.rajni.hibernate.basic.Course" />
 		<mapping class="com.rajni.hibernate.collection.Product"/>
+		<mapping class="com.rajni.hibernate.component.collection.Item"/>
+		<mapping class="com.rajni.hibernate.collection.CartItem"/>
+		<mapping class="com.rajni.hibernate.collection.Bid"/>
 	</session-factory>
 </hibernate-configuration>
