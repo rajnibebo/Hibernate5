@@ -63,6 +63,7 @@ public class Product {
 	@OrderColumn(name = "IMG_IDX")
 	@ListIndexBase(value = 1)
 	@Column(name = "PROD_IMAGE")
+	//@OrderBy("PROD_IMAGE DESC") //-- it will not work with @OrderColumn annotation, better not to use here
 	private List<String> alternativeImages = new ArrayList<String>();
 	
 	@ElementCollection
@@ -169,4 +170,7 @@ public class Product {
 		this.rankedLocations = rankedLocations;
 	}
 
+	public String toString() {
+		return "Product[ ID : "+productID+", name : "+name+"]\n";
+	}
 }

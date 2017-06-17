@@ -25,7 +25,8 @@ public class ProductTest {
 		//saveSpecifications();
 		//saveThumbnails();
 		//saveRankedLocations();
-		getRankedLocations();
+		//getRankedLocations();
+		getAlternateImages();
 	}
 	
 	static void saveUserUploadedImage() {
@@ -50,6 +51,15 @@ public class ProductTest {
 		product.addAltImage("Img2.jpg");
 		product.addAltImage("Img3.jpg");
 		session.save(product);
+		tx.commit();
+		HibernateUtil.closeResources();
+	}
+	
+	static void getAlternateImages() {
+		Session session = HibernateUtil.getSession();
+		Transaction tx = session.beginTransaction();
+		Product product = session.get(Product.class, 4l);
+		System.out.println(product.getAlternativeImages());
 		tx.commit();
 		HibernateUtil.closeResources();
 	}
