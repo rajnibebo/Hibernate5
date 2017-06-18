@@ -18,5 +18,9 @@
 		<mapping class="com.rajni.hibernate.onetoone.jointable.EmployeeJoinEntity" />
 		<mapping class="com.rajni.hibernate.onetoone.sharedPK.EmployeePK" />
 		<mapping class="com.rajni.hibernate.onetoone.sharedPK.AccountPK" />
+		<mapping class="com.rajni.hibernate.onetomany.foreign.AddressEntity"/>
+		<mapping class="com.rajni.hibernate.onetomany.foreign.StudentEntity"/>
+		<mapping class="com.rajni.hibernate.onetomany.jointable.StudentJoinEntity"/>
+		<mapping class="com.rajni.hibernate.onetomany.jointable.AddressJoinEntity"/>
 	</session-factory>
 </hibernate-configuration>
