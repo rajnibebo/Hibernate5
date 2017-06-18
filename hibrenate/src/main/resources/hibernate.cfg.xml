@@ -12,14 +12,11 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
-		<mapping class="com.rajni.hibernate.mapping.onetoone.User" />
-		<mapping class="com.rajni.hibernate.mapping.onetoone.Address"/>
-		<mapping class="com.rajni.hibernate.mapping.onetoone.Room"/>
-		<mapping class="com.rajni.hibernate.mapping.onetoone.Desk"/>
-		<mapping class="com.rajni.hibernate.mapping.onetoone.Item"/>
-		<mapping class="com.rajni.hibernate.mapping.onetoone.Shipment"/>
-		<mapping class="com.rajni.hibernate.mapping.om_mo.Bid"/>
-		<mapping class="com.rajni.hibernate.mapping.om_mo.Product"/>
-		<mapping class="com.rajni.hibernate.mapping.om_mo.Buyer"/>
+		<mapping class="com.rajni.hibernate.onetoone.foreign.AccountEntity" />
+		<mapping class="com.rajni.hibernate.onetoone.foreign.EmployeeEntity" />
+		<mapping class="com.rajni.hibernate.onetoone.jointable.AccountJoinEntity" />
+		<mapping class="com.rajni.hibernate.onetoone.jointable.EmployeeJoinEntity" />
+		<mapping class="com.rajni.hibernate.onetoone.sharedPK.EmployeePK" />
+		<mapping class="com.rajni.hibernate.onetoone.sharedPK.AccountPK" />
 	</session-factory>
 </hibernate-configuration>
