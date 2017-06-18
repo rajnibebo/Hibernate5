@@ -12,8 +12,15 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
-		<mapping class="com.rajni.hibernate.basic.Employee" />
-		<mapping class="com.rajni.hibernate.basic.Address"/>
-		<mapping class="com.rajni.hibernate.basic.Course" />
+		<mapping class="com.rajni.hibernate.onetoone.foreign.AccountEntity" />
+		<mapping class="com.rajni.hibernate.onetoone.foreign.EmployeeEntity" />
+		<mapping class="com.rajni.hibernate.onetoone.jointable.AccountJoinEntity" />
+		<mapping class="com.rajni.hibernate.onetoone.jointable.EmployeeJoinEntity" />
+		<mapping class="com.rajni.hibernate.onetoone.sharedPK.EmployeePK" />
+		<mapping class="com.rajni.hibernate.onetoone.sharedPK.AccountPK" />
+		<mapping class="com.rajni.hibernate.onetomany.foreign.AddressEntity"/>
+		<mapping class="com.rajni.hibernate.onetomany.foreign.StudentEntity"/>
+		<mapping class="com.rajni.hibernate.onetomany.jointable.StudentJoinEntity"/>
+		<mapping class="com.rajni.hibernate.onetomany.jointable.AddressJoinEntity"/>
 	</session-factory>
 </hibernate-configuration>
