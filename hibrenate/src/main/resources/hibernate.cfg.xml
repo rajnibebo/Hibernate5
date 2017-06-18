@@ -12,8 +12,14 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
-		<mapping class="com.rajni.hibernate.basic.Employee" />
-		<mapping class="com.rajni.hibernate.basic.Address"/>
-		<mapping class="com.rajni.hibernate.basic.Course" />
+		<mapping class="com.rajni.hibernate.mapping.onetoone.User" />
+		<mapping class="com.rajni.hibernate.mapping.onetoone.Address"/>
+		<mapping class="com.rajni.hibernate.mapping.onetoone.Room"/>
+		<mapping class="com.rajni.hibernate.mapping.onetoone.Desk"/>
+		<mapping class="com.rajni.hibernate.mapping.onetoone.Item"/>
+		<mapping class="com.rajni.hibernate.mapping.onetoone.Shipment"/>
+		<mapping class="com.rajni.hibernate.mapping.om_mo.Bid"/>
+		<mapping class="com.rajni.hibernate.mapping.om_mo.Product"/>
+		<mapping class="com.rajni.hibernate.mapping.om_mo.Buyer"/>
 	</session-factory>
 </hibernate-configuration>
